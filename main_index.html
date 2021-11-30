@@ -4,60 +4,47 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="css/main_style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
     <div id="page">
-        <div class="top">
-            <a href="history_index.html">History</a>
-        </div>
         <div class="calculator">
-            <div class="cause">
-                <span>
-                    23+13+23+13+23+13+23+13+23+13+23+13+23+13=
-                </span>
-            </div>
-            <div class="result">34</div>
+            <input class="cause" type="text">
+            <input class="result" type="text">
         </div>
         <div class="input">
             <div class="field">
-                <div class="basic common">AC</div>
-                <div class="basic common">+/-</div>
-                <div class="basic common">%</div>
-                <div class="operator common">
+                <div class="basic common" onclick="reset()">AC</div>
+                <div class="basic common" onclick="add('.')">.</div>
+                <div class="operator common" onclick="reduce()">
                     <i class="bi bi-backspace-fill"></i>
                 </div>
+                <div class="operator common" onclick="add('/')">÷</div>
             </div>
             <div class="field">
-                <div class="basic common">(</div>
-                <div class="basic common">)</div>
-                <div class="basic common">.</div>
-                <div class="operator common">÷</div>
+                <div class="basic common" onclick="add(7)">7</div>
+                <div class="basic common" onclick="add(8)">8</div>
+                <div class="basic common" onclick="add(9)">9</div>
+                <div class="operator common" onclick="add('*')">X</div>
             </div>
             <div class="field">
-                <div class="basic common">7</div>
-                <div class="basic common">8</div>
-                <div class="basic common">9</div>
-                <div class="operator common">X</div>
+                <div class="basic common" onclick="add(4)">4</div>
+                <div class="basic common" onclick="add(5)">5</div>
+                <div class="basic common" onclick="add(6)">6</div>
+                <div class="operator common" onclick="add('-')">-</div>
             </div>
             <div class="field">
-                <div class="basic common">4</div>
-                <div class="basic common">5</div>
-                <div class="basic common">6</div>
-                <div class="operator common">-</div>
+                <div class="basic common" onclick="add(3)">3</div>
+                <div class="basic common" onclick="add(2)">2</div>
+                <div class="basic common" onclick="add(1)">1</div>
+                <div class="operator common" onclick="add('+')">+</div>
             </div>
             <div class="field">
-                <div class="basic common">3</div>
-                <div class="basic common">2</div>
-                <div class="basic common">1</div>
-                <div class="operator common">+</div>
-            </div>
-            <div class="field">
-                <div class="zero-button">0</div>
-                <div class="result-button common">=</div>
+                <div class="zero-button" onclick="add(0)">0</div>
+                <div class="result-button common" onclick="calculate()">=</div>
             </div>
         </div>
     </div>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
