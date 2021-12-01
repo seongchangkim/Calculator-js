@@ -25,5 +25,5 @@
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/74657556/144170893-3059ad61-6112-4cfd-adf7-6c0e45a5241e.gif)
 <br>
 
-사용자 입력에 의 오류가 발생하면 예외처리를 하여 유효성 검사를 합니다. 
+사용자 입력에 의한 오류가 발생하면 예외처리를 하여 유효성 검사를 합니다. 
 
