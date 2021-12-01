@@ -5,6 +5,17 @@
     margin:0;
 }
 #page{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+.page-top h1{
+    width:480px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page-middle{
     width:480px;
     height:560px;
     background: linear-gradient(to bottom right,#abc7ff,#88ddff);

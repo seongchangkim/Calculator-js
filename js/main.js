@@ -12,18 +12,15 @@ function add(str){
 };
 
 function calculate(){
-    const re = new RegExp("/+$|-$/");
-    const regValue = cause.value.match(re);
-
-    if(regValue === null){
-        alert("연산자를 중복해서 사용할 수 없습니다.");
+    try{
+        let resultValue = eval(cause.value);
+        result.value = resultValue;
+        temp = resultValue;
+    }catch(e){
+        alert("오류!")
+    }finally{
+        cause.value = "";
     }
-
-    let resultValue = eval(cause.value);
-    result.value = resultValue;
-    temp = resultValue;
-
-    cause.value = "";
 };
 
 function reset(){
