@@ -6,7 +6,7 @@
 버튼을 통해서 계산하고자 한 값을 입력하여 계산할 수 있는 웹 애플리케이션입니다.
 
 <br>
-● 호스팅 : https://dunkim-hub.github.io/Calculator-js/
+● 호스팅 : https://seongchangkim.github.io/Calculator-js/
 <br>
 ● 제작기간 : 2021.11.29 ~ 2021.12.01(3일)
 
