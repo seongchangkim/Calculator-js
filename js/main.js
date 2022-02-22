@@ -29,8 +29,9 @@ function reset(){
 }
 
 function reduce(){
-    cause.value = temp;
-    result.value = "";
+    // cause.value = temp;
+    // result.value = "";
+    add("");
     let oneReduceValue = cause.value.substring(0, cause.value.length-1);
     cause.value = oneReduceValue;
 }
